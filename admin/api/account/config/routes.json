@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/account/bonus",
+      "handler": "Account.bonus",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/account/:_id/send/:reveiverId/:amount",
       "handler": "Account.send",
       "config": {

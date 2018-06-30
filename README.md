@@ -1,15 +1,19 @@
-## Admin
-
-Using (`Strapi`](https://strapi.io/documentation/).
-
-- `nvm use v8`
-- `npm install strapi@alpha -g`
-- `strapi -v`
-strapi new admin
-- `strapi start`
-
-## Setup production
+## Setup at production
 
 - Setup Node.js v8 via [nvm](https://github.com/creationix/nvm).
-- `cd bot/ && npm install`.
-- `cd bot/ && npm start`.
+
+### Setup Bot at production
+
+- `$ cd bot/`
+- `$ npm install`.
+- `$ npm install -g pm2`.
+- `$ pm2 start npm -- start`.
+
+### Setup Admin at production
+
+- `$ cd admin/`
+- `$ npm install`.
+- `$ npm install strapi@alpha -g`.
+- `$ pm2 start strapi -- start`.
+
+- `$ strapi start`.

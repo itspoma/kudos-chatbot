@@ -18,6 +18,10 @@ module.exports = {
     return strapi.services.account.fetchAll(ctx.query);
   },
 
+  bonus: async (ctx) => {
+    return strapi.services.account.bonus(ctx.query);
+  },
+
   /**
    * Retrieve a account record.
    *

@@ -87,6 +87,20 @@ module.exports = {
   },
 
   /**
+   * Promise to update a/an account.
+   *
+   * @return {Promise}
+   */
+
+  bonus: async (params) => {
+    const entry = await Account.update({}, {
+      $inc: {"balance": 100}
+    }, { multi: true });
+
+    return Account.count();
+  },
+
+  /**
    * Promise to edit a/an account.
    *
    * @return {Promise}
