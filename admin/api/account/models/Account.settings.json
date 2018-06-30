@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "account",
+  "info": {
+    "name": "account",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "balance": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-mongoose",
+      "settings": {
+        "client": "mongo",
+        "host": "ds221631.mlab.com",
+        "port": "21631",
+        "database": "kudosbot",
+        "username": "bot",
+        "password": "botbot1"
+      },
+      "options": {
+        "authenticationDatabase": "kudosbot",
+        "ssl": false
+      }
+    }
+  }
+}

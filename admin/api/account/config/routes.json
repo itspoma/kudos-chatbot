@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/account",
+      "handler": "Account.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/account/count",
+      "handler": "Account.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/account/:_id/send/:reveiverId/:amount",
+      "handler": "Account.send",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/account/:_id",
+      "handler": "Account.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/account",
+      "handler": "Account.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/account/new/:user",
+      "handler": "Account.new",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/account/:_id",
+      "handler": "Account.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/account/:_id",
+      "handler": "Account.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
